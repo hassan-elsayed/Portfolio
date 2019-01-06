@@ -84,14 +84,15 @@
                             <label class="mdl-textfield__label" for="demo-input">Age</label>
                         </div>
                         <div>Which option best describes your current role?</div>
-                        <button id="menu-speed" class="mdl-button mdl-js-button mdl-button--icon">
-                          <i class="material-icons">menu</i>
-                        </button>
-                        <ul class="mdl-menu mdl-js-menu" for="menu-speed">
-                          <li class="mdl-menu__item">Fast</li>
-                          <li class="mdl-menu__item" disabled>Medium</li>
-                          <li class="mdl-menu__item">Slow</li>
-                        </ul>
+                        <select class="mdl-textfield__input" id="currentRole" name="currentRole">
+                          <option class="mdl-menu__item" value="none" disabled>Select an option</option>
+                          <option class="mdl-menu__item" value="Student">Student</option>
+                          <option class="mdl-menu__item" value="Full Time Job">Full Time Job</option>
+                          <option class="mdl-menu__item" value="Full Time Learner">Full Time Learner</option>
+                          <option class="mdl-menu__item" value="Prefer not to say">Prefer not to say</option>
+                          <option class="mdl-menu__item" value="Other">Other</option>
+                          <label class="mdl-textfield__label" for="currentRole">Current Role</label>
+                        </select>
                         <div>How likely is that you would recommend freeCodeCamp to a friend?</div>
                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option1">
                           <input type="radio" id="option1" class="mdl-radio__button" name="options" value="1">
@@ -106,6 +107,14 @@
                           <span class="mdl-radio__label">Not Sure</span>
                         </label>
                         <div>What do you like most in FCC:</div>
+                        <select class="mdl-textfield__input" id="likeMostFCC" name="likeMostFCC">
+                          <option class="mdl-menu__item" value="none" disabled>Select an option</option>
+                          <option class="mdl-menu__item" value="Challenges">Challenges</option>
+                          <option class="mdl-menu__item" value="Projects">Projects</option>
+                          <option class="mdl-menu__item" value="Community">Community</option>
+                          <option class="mdl-menu__item" value="Open Source">Open Source</option>
+                          <label class="mdl-textfield__label" for="likeMostFCC">Like Most in FCC</label>
+                        </select>
                         <div>Things that should be improved in the future</div>
                         <div>(Check all that apply):</div>
                         <label for="chkbox1" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
