@@ -1,6 +1,6 @@
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A sample Survey Form">
@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
-        #view-source {
+      #view-source {
             position: fixed;
             display: block;
             right: 0;
@@ -42,151 +42,179 @@
             z-index: 900;
         }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header bg1">
-        <header class="mdl-layout__header mdl-layout__header--waterfall bg1">
-            <div class="mdl-layout__header-row"> <span class="mdl-layout__title">A Survey Form</span>
-            </div>
-            <div class="mdl-layout__header-row portfolio-navigation-row">
-                <nav class="mdl-navigation"> <a class="mdl-navigation__link" href="portfolio.html">Portfolio</a>  <a class="mdl-navigation__link" href="#">About</a>  <a class="mdl-navigation__link" href="#">Contact</a>
-                </nav>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer mdl-layout--small-screen-only"> <span class="mdl-layout__title">My portfolio website</span>
-            <nav class="mdl-navigation"> <a class="mdl-navigation__link" href="portfolio.html">Portfolio</a>  <a class="mdl-navigation__link" href="#">About</a>  <a class="mdl-navigation__link" href="#">Contact</a>
-            </nav>
+      <header class="mdl-layout__header mdl-layout__header--waterfall bg1">
+        <div class="mdl-layout__header-row"> <span class="mdl-layout__title">A Survey Form</span>
         </div>
-        <div class="demo-ribbon"></div>
-        <main class="demo-main mdl-layout__content">
-            <div class="demo-container mdl-grid">
-                <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-                <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-                    <div class="demo-crumbs mdl-color-text--grey-500">
-                        Sample
-                    </div>
-                    <p>Let us know how we can improve freeCodeCamp</p>
-                    <form>
-                        <!-- class "mdl-textfield container" -->
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <!-- class "mdl-textfield__input" -->
-                            <input class="mdl-textfield__input" type="text" id="demo-input" />
-                            <!-- class "mdl-textfield__label" -->
-                            <label class="mdl-textfield__label" for="demo-input">Name</label>
-                        </div>
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" id="demo-input" />
-                            <label class="mdl-textfield__label" for="demo-input">Email</label>
-                        </div>
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" id="demo-input" />
-                            <label class="mdl-textfield__label" for="demo-input">Age</label>
-                        </div>
-                        <div>Which option best describes your current role?</div>
-                        <select class="mdl-textfield__input" id="currentRole" name="currentRole">
-                          <option class="mdl-menu__item" value="none" disabled>Select an option</option>
-                          <option class="mdl-menu__item" value="Student">Student</option>
-                          <option class="mdl-menu__item" value="Full Time Job">Full Time Job</option>
-                          <option class="mdl-menu__item" value="Full Time Learner">Full Time Learner</option>
-                          <option class="mdl-menu__item" value="Prefer not to say">Prefer not to say</option>
-                          <option class="mdl-menu__item" value="Other">Other</option>
-                          <label class="mdl-textfield__label" for="currentRole">Current Role</label>
-                        </select>
-                        <div>How likely is that you would recommend freeCodeCamp to a friend?</div>
-                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option1">
-                          <input type="radio" id="option1" class="mdl-radio__button" name="options" value="1">
-                          <span class="mdl-radio__label">Definitely</span>
-                        </label>
-                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option1">
-                          <input type="radio" id="option2" class="mdl-radio__button" name="options" value="2">
-                          <span class="mdl-radio__label">Maybe</span>
-                        </label>
-                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option1">
-                          <input type="radio" id="option3" class="mdl-radio__button" name="options" value="3">
-                          <span class="mdl-radio__label">Not Sure</span>
-                        </label>
-                        <div>What do you like most in FCC:</div>
-                        <select class="mdl-textfield__input" id="likeMostFCC" name="likeMostFCC">
-                          <option class="mdl-menu__item" value="none" disabled>Select an option</option>
-                          <option class="mdl-menu__item" value="Challenges">Challenges</option>
-                          <option class="mdl-menu__item" value="Projects">Projects</option>
-                          <option class="mdl-menu__item" value="Community">Community</option>
-                          <option class="mdl-menu__item" value="Open Source">Open Source</option>
-                          <label class="mdl-textfield__label" for="likeMostFCC">Like Most in FCC</label>
-                        </select>
-                        <div>Things that should be improved in the future</div>
-                        <div>(Check all that apply):</div>
-                        <label for="chkbox1" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                            <input type="checkbox" id="chkbox1" class="mdl-checkbox__input">
-                            <span class="mdl-checkbox__label">Front-end Projects</span>
-                        </label>
-                        <label for="chkbox2" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                            <input type="checkbox" id="chkbox2" class="mdl-checkbox__input">
-                            <span class="mdl-checkbox__label">Back-end Projects</span>
-                        </label>
-                        <label for="chkbox3" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                            <input type="checkbox" id="chkbox3" class="mdl-checkbox__input">
-                            <span class="mdl-checkbox__label">Data Visualization</span>
-                        </label>
-                        <label for="chkbox4" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                            <input type="checkbox" id="chkbox4" class="mdl-checkbox__input">
-                            <span class="mdl-checkbox__label">Challenges</span>
-                        </label>
-                        <label for="chkbox5" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                            <input type="checkbox" id="chkbox5" class="mdl-checkbox__input">
-                            <span class="mdl-checkbox__label">Open Source Community</span>
-                        </label>
-                        <label for="chkbox6" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                            <input type="checkbox" id="chkbox6" class="mdl-checkbox__input">
-                            <span class="mdl-checkbox__label">Gitter help rooms</span>
-                        </label>
-                        <label for="chkbox7" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                            <input type="checkbox" id="chkbox7" class="mdl-checkbox__input">
-                            <span class="mdl-checkbox__label">Videos</span>
-                        </label>
-                        <label for="chkbox8" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                            <input type="checkbox" id="chkbox8" class="mdl-checkbox__input">
-                            <span class="mdl-checkbox__label">City Meetups</span>
-                        </label>
-                        <label for="chkbox9" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                            <input type="checkbox" id="chkbox9" class="mdl-checkbox__input">
-                            <span class="mdl-checkbox__label">Wiki</span>
-                        </label>
-                        <label for="chkbox10" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                            <input type="checkbox" id="chkbox10" class="mdl-checkbox__input">
-                            <span class="mdl-checkbox__label">Forum</span>
-                        </label>
-                        <label for="chkbox11" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                            <input type="checkbox" id="chkbox11" class="mdl-checkbox__input">
-                            <span class="mdl-checkbox__label">Additional Courses</span>
-                        </label>
-                        <div>Any Comments or Suggestions?</div>
-                        <!-- Floating Multiline Textfield -->
-                        <div class="mdl-textfield mdl-js-textfield">
-                            <textarea class="mdl-textfield__input" type="text" rows="4" id="textbox1"></textarea>
-                            <label class="mdl-textfield__label" for="textbox1">Enter comments here...</label>
-                        </div>
-
-                    </form>
-                </div>
+        <div class="mdl-layout__header-row portfolio-navigation-row">
+          <nav class="mdl-navigation"> <a class="mdl-navigation__link" href="portfolio.html">Portfolio</a> <a class="mdl-navigation__link" href="#">About</a> <a class="mdl-navigation__link" href="#">Contact</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer mdl-layout--small-screen-only"> <span class="mdl-layout__title">My portfolio website</span>
+        <nav class="mdl-navigation"> <a class="mdl-navigation__link" href="portfolio.html">Portfolio</a> <a class="mdl-navigation__link" href="#">About</a> <a class="mdl-navigation__link" href="#">Contact</a>
+        </nav>
+      </div>
+      <div class="demo-ribbon"></div>
+      <main class="demo-main mdl-layout__content">
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="mdl-cell mdl-cell--12-col demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <div class="demo-crumbs mdl-color-text--grey-500">
+              Sample
             </div>
-            <footer class="demo-footer mdl-mini-footer">
-                <div class="mdl-mini-footer--left-section">
-                    <ul class="mdl-mini-footer--link-list">
-                        <li><a href="#">Help</a>
-                        </li>
-                        <li><a href="#">Privacy and Terms</a>
-                        </li>
-                        <li><a href="#">User Agreement</a>
-                        </li>
-                    </ul>
+            <div class="mdl-cell mdl-cell--12-col text-align:center;">Let us know how we can improve freeCodeCamp</div>
+            <form>
+              <!-- class "mdl-textfield container" -->
+              <div class="mdl-cell mdl-cell--3-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <!-- class "mdl-textfield__input" -->
+                <input class="mdl-textfield__input" type="text" id="demo-input" />
+                <!-- class "mdl-textfield__label" -->
+                <label class="mdl-textfield__label" for="demo-input">Name</label>
+              </div>
+              <div class="mdl-cell mdl-cell--3-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="demo-input" />
+                <label class="mdl-textfield__label" for="demo-input">Email</label>
+              </div>
+              <div class="mdl-cell mdl-cell--3-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="demo-input" />
+                <label class="mdl-textfield__label" for="demo-input">Age</label>
+              </div>
+              <div class="mdl-cell mdl-cell--3-col">
+              </div>
+              <div class="mdl-cell mdl-cell--12-col">Which option best describes your current role?
+                <div class="mdl-cell mdl-cell--12-col">
+                  <select class="mdl-textfield__input" id="currentRole" name="currentRole">
+                    <option class="mdl-menu__item" value="none" disabled>Select an option</option>
+                    <option class="mdl-menu__item" value="Student">Student</option>
+                    <option class="mdl-menu__item" value="Full Time Job">Full Time Job</option>
+                    <option class="mdl-menu__item" value="Full Time Learner">Full Time Learner</option>
+                    <option class="mdl-menu__item" value="Prefer not to say">Prefer not to say</option>
+                    <option class="mdl-menu__item" value="Other">Other</option>
+                    <label class="mdl-textfield__label" for="currentRole">Current Role</label>
+                  </select>
                 </div>
-            </footer>
-        </main>
+              </div>
+              <div class="mdl-cell mdl-cell--12-col">How likely is that you would recommend freeCodeCamp to a friend?
+                <div class="mdl-cell mdl-cell--12-col">
+                  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option1">
+                    <input type="radio" id="option1" class="mdl-radio__button" name="options" value="1">
+                    <span class="mdl-radio__label">Definitely</span>
+                  </label>
+                  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option1">
+                    <input type="radio" id="option2" class="mdl-radio__button" name="options" value="2">
+                    <span class="mdl-radio__label">Maybe</span>
+                  </label>
+                  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option1">
+                    <input type="radio" id="option3" class="mdl-radio__button" name="options" value="3">
+                    <span class="mdl-radio__label">Not Sure</span>
+                  </label>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--12-col">What do you like most in FCC:
+                <select class="mdl-textfield__input" id="likeMostFCC" name="likeMostFCC">
+                  <option class="mdl-menu__item" value="none" disabled>Select an option</option>
+                  <option class="mdl-menu__item" value="Challenges">Challenges</option>
+                  <option class="mdl-menu__item" value="Projects">Projects</option>
+                  <option class="mdl-menu__item" value="Community">Community</option>
+                  <option class="mdl-menu__item" value="Open Source">Open Source</option>
+                  <label class="mdl-textfield__label" for="likeMostFCC">Like Most in FCC</label>
+                </select>
+              </div>
+              <div class="mdl-cell mdl-cell--12-col">Things that should be improved in the future
+                <div class="mdl-cell mdl-cell--12-col">
+                  <div class="mdl-cell mdl-cell--12-col">(Check all that apply):</div>
+                  <div class="mdl-grid">
+                    <label for="chkbox1" class="mdl-cell mdl-cell--4-col mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                      <input type="checkbox" id="chkbox1" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Front-end Projects</span>
+                    </label>
+                    <label for="chkbox2" class="mdl-cell mdl-cell--4-col mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                      <input type="checkbox" id="chkbox2" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Back-end Projects</span>
+                    </label>
+                    <label for="chkbox3" class="mdl-cell mdl-cell--4-col mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                      <input type="checkbox" id="chkbox3" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Data Visualization</span>
+                    </label>
+                    <label for="chkbox4" class="mdl-cell mdl-cell--4-col mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                      <input type="checkbox" id="chkbox4" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Challenges</span>
+                    </label>
+                    <label for="chkbox5" class="mdl-cell mdl-cell--4-col mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                      <input type="checkbox" id="chkbox5" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Open Source Community</span>
+                    </label>
+                    <label for="chkbox6" class="mdl-cell mdl-cell--4-col mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                      <input type="checkbox" id="chkbox6" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Gitter help rooms</span>
+                    </label>
+                    <label for="chkbox7" class="mdl-cell mdl-cell--4-col mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                      <input type="checkbox" id="chkbox7" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Videos</span>
+                    </label>
+                    <label for="chkbox8" class="mdl-cell mdl-cell--4-col mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                      <input type="checkbox" id="chkbox8" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">City Meetups</span>
+                    </label>
+                    <label for="chkbox9" class="mdl-cell mdl-cell--4-col mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                      <input type="checkbox" id="chkbox9" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Wiki</span>
+                    </label>
+                    <label for="chkbox10" class="mdl-cell mdl-cell--4-col mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                      <input type="checkbox" id="chkbox10" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Forum</span>
+                    </label>
+                    <label for="chkbox11" class="mdl-cell mdl-cell--4-col mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                      <input type="checkbox" id="chkbox11" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Additional Courses</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="mdl-cell mdl-cell--12-col">Any Comments or Suggestions?
+                  <!-- Floating Multiline Textfield -->
+                  <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield">
+                    <textarea class="mdl-textfield__input" type="text" rows="4" id="textbox1"></textarea>
+                    <label class="mdl-textfield__label" for="textbox1">Enter comments here...</label>
+                  </div>
+                </div>
+                <div class="mdl-grid">
+                  <!-- Raised button with ripple -->
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--middle">
+                    <button class="mdl-cell mdl-cell--4-col mdl-cell--middle mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+            </form>
+          </div>
+        </div>
+        <footer class="demo-footer mdl-mini-footer">
+          <div class="mdc-layout-grid mdl-mini-footer--left-section">
+            <div class="mdc-layout-grid__inner mdl-mini-footer--link-list">
+              <div class="mdc-layout-grid__cell mdc-layout-grid--align-left">
+                <div class="mdl-cell mdl-cell--4-col"><a href="#">Help</a>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell mdc-layout-grid--align-middle">
+                <div class="mdl-cell mdl-cell--4-col"><a href="#">Privacy and Terms</a>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell mdc-layout-grid--align-right">
+                <div class="mdl-cell mdl-cell--4-col"><a href="#">User Agreement</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
     </div>
-    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/article/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
+    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/article/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View
+      Source</a>
     <script src="$$hosted_libs_prefix$$/$$version$$/material.min.js"></script>
-</body>
+  </body>
 
 </html>
