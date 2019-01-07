@@ -122,3 +122,6 @@ img.article-image {
 .text-dark {
   color: black;
 }
+.my-card__media {
+  background-image: url("pretty.jpg");
+}
